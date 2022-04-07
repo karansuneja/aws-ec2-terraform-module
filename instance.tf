@@ -39,7 +39,7 @@ resource "aws_instance" "ubuntu-2" {
   vpc_security_group_ids=[aws_security_group.allow_ssh.id]
 
 # key name
-key_name = "aws_key"
+key_name = var.key_name
 
   tags = {
     Name = "Ec2-with-VPC-private"
@@ -49,5 +49,5 @@ key_name = "aws_key"
 
 resource "aws_key_pair" "deployer" {
   key_name   = var.custom_key_name
-  public_key = var.public_key
+  public_key = var.public-key
 }
