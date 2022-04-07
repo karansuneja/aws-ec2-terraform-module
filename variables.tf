@@ -60,11 +60,11 @@ variable "public_key" {
   type    = string
   default = ""
 }
-variable "access_key" {
+variable "access-key" {
   type    = string
   default = ""
 }
-variable "secret_key" {
+variable "secret-key" {
   type    = string
   default = ""
 }
