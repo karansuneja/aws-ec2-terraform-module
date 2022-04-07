@@ -56,7 +56,7 @@ variable "custom_key_name" {
   type    = string
   default = ""
 }
-variable "public_key" {
+variable "public-key" {
   type    = string
   default = ""
 }
